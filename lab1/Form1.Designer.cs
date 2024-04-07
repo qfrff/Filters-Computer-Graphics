@@ -58,6 +58,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button1 = new System.Windows.Forms.Button();
             this.линейноеРастяжениеГистограммыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.медианныйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -104,7 +105,7 @@
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
             this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.сохранитьToolStripMenuItem.Text = "Сохранить";
-            this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
+
             // 
             // назадToolStripMenuItem
             // 
@@ -131,7 +132,8 @@
             this.сепияToolStripMenuItem,
             this.увеличитьЯркостьToolStripMenuItem,
             this.волныToolStripMenuItem,
-            this.стеклоToolStripMenuItem});
+            this.стеклоToolStripMenuItem,
+            this.медианныйToolStripMenuItem});
             this.точечныеToolStripMenuItem.Name = "точечныеToolStripMenuItem";
             this.точечныеToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
             this.точечныеToolStripMenuItem.Text = "Точечные";
@@ -304,6 +306,13 @@
             this.линейноеРастяжениеГистограммыToolStripMenuItem.Text = "Линейное растяжение гистограммы";
             this.линейноеРастяжениеГистограммыToolStripMenuItem.Click += new System.EventHandler(this.линейноеРастяжениеГистограммыToolStripMenuItem_Click);
             // 
+            // медианныйToolStripMenuItem
+            // 
+            this.медианныйToolStripMenuItem.Name = "медианныйToolStripMenuItem";
+            this.медианныйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.медианныйToolStripMenuItem.Text = "Медианный";
+            this.медианныйToolStripMenuItem.Click += new System.EventHandler(this.медианныйToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,6 +365,7 @@
         private System.Windows.Forms.ToolStripMenuItem сохранитьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem назадToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem линейноеРастяжениеГистограммыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem медианныйToolStripMenuItem;
     }
 }
 
