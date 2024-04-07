@@ -61,6 +61,7 @@ namespace lab1
             }
         }
 
+
         private void инверсияToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ApplyFilter(new InvertFilter());
@@ -209,5 +210,20 @@ namespace lab1
             ApplyFilter(new AutoLevelsFilter());
         }
 
+        ImageSaver imageSaver = new ImageSaver();
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (pictureBox1.Image != null)
+            {
+                imageSaver.SaveImage((Bitmap)pictureBox1.Image);
+                MessageBox.Show("Фотография сохранена");
+            }
+            else
+            {
+                MessageBox.Show("Фотография не сохранена");
+            }
+        }
     }
 }
